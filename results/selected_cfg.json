@@ -1,0 +1,59 @@
+{
+ "method": "CONV_B+sharp0.15+OT",
+ "persona": "CONV_B",
+ "cfg": {
+  "values": true,
+  "eng": true,
+  "dev": true,
+  "k_by_eng": {
+   "high": null,
+   "mid": 1.6,
+   "low": 0.6
+  }
+ },
+ "sharp_T": 0.15,
+ "ot": true,
+ "baselines": {
+  "BASE": "BASE+temp2.0+OT",
+  "DIVERSE": "DIVERSE+OT",
+  "ARGYLE": "ARGYLE+temp1.5+OT",
+  "BACKSTORY": "BACKSTORY+temp1.5+OT",
+  "ANTHOLOGY": "ANTHOLOGY+sharp0.05+OT"
+ },
+ "temp_T": 2.0,
+ "v1_method": "ENG_VALUES+OT",
+ "dev_scores": {
+  "CONV_B+sharp0.15+OT": {
+   "T2_otp": 1.034,
+   "S2_pooled": 0.957
+  },
+  "VALUES_LPP_k1.6+sharp0.05+OT": {
+   "T2_otp": 1.028,
+   "S2_pooled": 1.103
+  },
+  "CONV_C+sharp0.15+OT": {
+   "T2_otp": 1.022,
+   "S2_pooled": 1.004
+  },
+  "CONV_A+sharp0.1+OT": {
+   "T2_otp": 1.125,
+   "S2_pooled": 0.952
+  }
+ },
+ "gpt": {
+  "persona": "CONV_B_s0.1",
+  "method": "CONV_B_s0.1+OT"
+ },
+ "diverse_best": "DIVERSE5+OT",
+ "diverse_family_scores": {
+  "DIVERSE": 2.2744,
+  "DIVERSE2": 2.166,
+  "DIVERSE3": 2.1103,
+  "DIVERSE4": 2.3366,
+  "DIVERSE5": 2.0542
+ },
+ "ideo1d_best": "IDEO1D+OT",
+ "offset_best": "OFFSET_b3.0+OT",
+ "offsetu_best": "OFFSETU_b3.0+OT",
+ "selection": "CEK development half (100 simulated respondents, 30 resamples); criterion in Appendix B of the paper"
+}

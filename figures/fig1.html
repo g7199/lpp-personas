@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Figure 1</title>
+<style>
+@page { size: 300px 207px; margin: 0 }
+:root { --ink:#1f2328; --mute:#5f6670; --line:#d6d9de; --bg:#f7f8fa; --D:#2f6db5; --Dbg:#dfe9f6; --R:#c9443a; --Rbg:#f7e1de;
+        --ok:#2e7d4f; --okbg:#e3f2e8; --bad:#b9382c; --badbg:#fbe4e0; --hl:#eef7f1; --hlb:#9cc9ab }
+* { box-sizing:border-box }
+html, body { margin:0; padding:0; background:#fff }
+body { width:300px; height:207px; font-family:'Nimbus Sans','Liberation Sans',Helvetica,Arial,sans-serif; color:var(--ink); font-size:9.5px; line-height:1.2; position:relative; overflow:hidden }
+.top { position:absolute; left:2px; right:2px; top:2px; height:36px; border:1px solid var(--line); border-radius:7px; background:var(--bg); display:flex; align-items:center; gap:6px; padding:0 7px }
+.top .p { font-size:9.4px; line-height:1.25 } .top b { color:var(--R) }
+.q { margin-left:auto; text-align:right; color:var(--mute); font-size:8.8px; line-height:1.25 }
+.rows { position:absolute; left:2px; right:2px; top:42px }
+.row { display:flex; align-items:center; height:31px; padding:0 4px; border-radius:7px; border:1px solid transparent; margin-bottom:1px }
+.row.hl { background:var(--hl); border-color:var(--hlb) }
+.row.head { height:13px; margin-bottom:1px }
+.who { width:79px; flex:none; display:flex; align-items:center; gap:4px; font-weight:700; font-size:8.9px; line-height:1.1; white-space:nowrap; padding-right:2px }
+.who svg { flex:none }
+.who small { display:block; font-weight:400; color:var(--mute); font-size:8.4px }
+.ans { width:67px; flex:none; display:flex; gap:2px }
+.c { width:21px; height:19px; border-radius:4px; font-size:8.6px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:none }
+.hd { width:21px; flex:none; font-size:8.4px; color:var(--mute); text-align:center; font-weight:700 }
+.L { background:var(--Dbg); color:var(--D) } .C { background:var(--Rbg); color:var(--R) }
+.flip { outline:1.5px dashed var(--bad); outline-offset:0.5px }
+.arr { width:10px; flex:none; color:#8b929c; text-align:center; font-size:10px }
+.verd { width:58px; flex:none; margin-left:auto }
+.hdv { font-size:8.4px; color:var(--mute); text-align:center; font-weight:700 }
+.bad, .ok { font-size:8.5px; font-weight:700; border-radius:6px; padding:0.5px 3px; display:block; margin:1px 0; text-align:center; white-space:nowrap }
+.ok { background:var(--okbg); color:var(--ok) } .bad { background:var(--badbg); color:var(--bad) }
+.leg { position:absolute; left:4px; right:2px; bottom:3px; display:flex; gap:3px; font-size:8.5px; color:var(--mute); align-items:center; white-space:nowrap }
+.leg .c { width:20px; height:13px; font-size:8.4px } .leg .sp { width:7px; flex:none }
+</style></head>
+<body>
+<div class="top">
+  <svg width="16" height="20" viewBox="0 0 16 20" style="flex:none"><circle cx="8" cy="5" r="4" fill="#9aa1ab"/><path d="M1 20 q7 -13 14 0z" fill="#9aa1ab"/></svg>
+  <div class="p">45&ndash;54, White man, college,<br><b>strong Republican</b>, conservative</div>
+  <div class="q">three unrelated issues,<br>asked twice: wave 1 &rarr; 2</div>
+</div>
+<div class="rows"><div class="row head"><div class="who"></div><div class="ans"><span class="hd">Tax</span><span class="hd">Clim.</span><span class="hd">Banks</span></div><div class="arr"></div><div class="ans"><span class="hd">Tax</span><span class="hd">Clim.</span><span class="hd">Banks</span></div><div class="verd hdv">verdict</div></div><div class="row"><div class="who"><svg width="15" height="17" viewBox="0 0 16 20"><circle cx="8" cy="5" r="4" fill="#4b5563"/><path d="M1 20 q7 -13 14 0z" fill="#4b5563"/></svg><span>Real person</span></div><div class="ans"><span class="c C">con</span><span class="c L">lib</span><span class="c C">con</span></div><div class="arr">&rarr;</div><div class="ans"><span class="c C">con</span><span class="c L">lib</span><span class="c C">con</span></div><div class="verd"><span class="ok">&#10003; mixed</span><span class="ok">&#10003; stable</span></div></div><div class="row"><div class="who"><svg width="16" height="15" viewBox="0 0 22 20"><rect x="3" y="5" width="16" height="12" rx="3" fill="#4b5563"/><circle cx="8.5" cy="11" r="1.8" fill="#fff"/><circle cx="13.5" cy="11" r="1.8" fill="#fff"/><line x1="11" y1="1" x2="11" y2="5" stroke="#4b5563" stroke-width="1.5"/></svg><span>LLM persona</span></div><div class="ans"><span class="c C">con</span><span class="c C">con</span><span class="c C">con</span></div><div class="arr">&rarr;</div><div class="ans"><span class="c C">con</span><span class="c C">con</span><span class="c C">con</span></div><div class="verd"><span class="bad">&#10007; party line</span><span class="ok">&#10003; stable</span></div></div><div class="row"><div class="who"><svg width="16" height="15" viewBox="0 0 22 20"><rect x="3" y="5" width="16" height="12" rx="3" fill="#4b5563"/><circle cx="8.5" cy="11" r="1.8" fill="#fff"/><circle cx="13.5" cy="11" r="1.8" fill="#fff"/><line x1="11" y1="1" x2="11" y2="5" stroke="#4b5563" stroke-width="1.5"/></svg><span>+ noise<small>(temperature)</small></span></div><div class="ans"><span class="c C">con</span><span class="c L">lib</span><span class="c C">con</span></div><div class="arr">&rarr;</div><div class="ans"><span class="c L flip">lib</span><span class="c C">con</span><span class="c L flip">lib</span></div><div class="verd"><span class="ok">&#10003; mixed</span><span class="bad">&#10007; random</span></div></div><div class="row hl"><div class="who"><svg width="16" height="15" viewBox="0 0 22 20"><rect x="3" y="5" width="16" height="12" rx="3" fill="#2e7d4f"/><circle cx="8.5" cy="11" r="1.8" fill="#fff"/><circle cx="13.5" cy="11" r="1.8" fill="#fff"/><line x1="11" y1="1" x2="11" y2="5" stroke="#2e7d4f" stroke-width="1.5"/></svg><span>LPP (ours)</span></div><div class="ans"><span class="c C">con</span><span class="c L">lib</span><span class="c C">con</span></div><div class="arr">&rarr;</div><div class="ans"><span class="c C">con</span><span class="c L">lib</span><span class="c C">con</span></div><div class="verd"><span class="ok">&#10003; mixed</span><span class="ok">&#10003; stable</span></div></div></div>
+<div class="leg"><span class="c C">con</span><span>conservative</span><span class="sp"></span><span class="c L">lib</span><span>liberal</span><span class="sp"></span><span class="c L flip">lib</span><span>changed between waves</span></div>
+</body></html>

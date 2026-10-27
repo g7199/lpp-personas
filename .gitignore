@@ -1,0 +1,9 @@
+data/*
+!data/README.md
+results/*
+!results/exp2_split.json
+!results/selected_cfg.json
+tables/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
